@@ -1,9 +1,14 @@
 const activation = sum => Math.sign(sum) || 1;
-const rand = (a, b) => Math.random() * (b - a) + a;
 
 class Perceptron {
-    constructor () {
-        this.weights = [rand(-1, 1), rand(-1, 1)];
+    constructor (inputsCount, defaultWeights = null) {
+        this.learningRate = 0.1;
+        if (!defaultWeights) {
+            this.weights = [];
+            for (let i = 0; i < inputsCount; i++) this.weights.push(rand(-1, 1));
+        } else {
+            this.weights = defaultWeights;
+        }
     }
     guess (inputs) {
         let sum = 0;
@@ -16,9 +21,9 @@ class Perceptron {
 
         // Tune all the weights
         for (let i in this.weights) {
-            this.weights[i] += error * inputs[i];
+            this.weights[i] += (error * inputs[i] * this.learningRate);
         }
     }
 }
 
-module.exports = Perceptron;
+export default Perceptron;
