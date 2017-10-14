@@ -1,6 +1,6 @@
 const activation = sum => Math.sign(sum) || 1;
 
-class Perseptron {
+class Perceptron {
     constructor () {
         this.weights = [0.5, 0.3];
     }
@@ -11,4 +11,4 @@ class Perseptron {
     }
 }
 
-module.exports = Perseptron;
+module.exports = Perceptron;
