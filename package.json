@@ -1,0 +1,24 @@
+{
+  "name": "deep-learning-exercises",
+  "version": "0.0.0",
+  "description": "My exercises through the process of learning \"Deep Learning\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alireza29675/deep-learning-exercises.git"
+  },
+  "keywords": [
+    "exercises",
+    "deep learning",
+    "learning"
+  ],
+  "author": "Alireza Sheikholmolouki",
+  "license": "",
+  "bugs": {
+    "url": "https://github.com/Alireza29675/deep-learning-exercises/issues"
+  },
+  "homepage": "https://github.com/Alireza29675/deep-learning-exercises#readme"
+}

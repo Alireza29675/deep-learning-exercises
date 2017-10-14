@@ -1,0 +1,1 @@
+const app = require('./exercises/0.Perseptrons/index')
